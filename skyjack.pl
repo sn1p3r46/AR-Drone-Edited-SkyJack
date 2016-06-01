@@ -130,8 +130,7 @@ while (1)
 
 
 			my $thr = threads->create({'void' => 1},
-								   sub { sudo($aireplay, "-0", "0", "-a", $clients{$cli}, "-c", $cli, $interface); });
-								   
+				sub { sudo($aireplay, "-0", "0", "-a", $clients{$cli}, "-c", $cli, $interface); });
 			print "thread launched"
 		}
 
